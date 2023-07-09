@@ -1,0 +1,22 @@
+template = "<!DOCTYPE html>
+<html>
+<head>
+  <title>Marvel Comics</title>
+</head>
+<body>
+  <h1>Creador con menos cómics disponibles: <%= creator_name %></h1>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre del personaje</th>
+    </tr>
+    <% character_names.each do |character_name| %>
+      <tr>
+        <td><%= character_name %></td>
+      </tr>
+    <% end %>
+  </table>
+</body>
+</html>
+"
+
